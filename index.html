@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <script type="text/javascript" src="javascript/main.js"></script>
+    </head>
+    
+    <body>
+        <div class="container p-4 bg-white mt-5">
+<!--           <div id="message">welcome</div>-->
+            <form class="mb-0">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                       <div class="input-box">
+                         <label class="place-holder">First Name</label>                       
+                         <input type="text"class="input" id="first-name" onclick="onClickFirstName(this)" onblur="onBlurFirstName(this)" />
+                       </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-12">
+                       <div class="input-box">
+                          <label class="place-holder">Last Name</label>
+                          <input type="text" class="input" id="last-name" onclick="onClickLastName(this)" onblur="onBlurLastName(this)" />
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                       <div class="input-box">
+                           <label class="place-holder">Email</label>
+                           <input type="email" class="input" id="email" onclick="onClickMail(this)" onblur="onBlurMail(this)" />
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                       <div class="input-box">
+                         <label class="place-holder">Phone Number</label>
+                         <input type="tel" class="input" 
+                         onclick="onClickPhoneNumber(this)" maxlength="10" id="phone-number" onblur="onBlurPhoneNumber(this)"/>
+                       </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-12">
+                       <div class="input-box">
+                           <label class="place-holder">Pin Code</label>
+                           <input type="tel" class="input" maxlength="6" id="pin-code" onclick="onClickPinCode(this)" onblur="onBlurPinCode(this)" />
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                       <div class="input-box">
+                           <label class="place-holder">Age</label>
+                           <input type="tel" maxlength="3" class="input" id="age" onclick="onClickAge(this)" onblur="onBlurAge(this)" />
+                       </div>
+                    </div>
+                </div>
+                <div class="submit-box">
+                    <p id="submit" onclick="submit(this);" >Submit</p> 
+                </div>
+            </form>
+        </div>
+        
+        <div class="container bg-white mt-5">
+            <table id="infoTable" class="table table-bordered d-none">
+                <tr>
+                    <th class="w-50">First Name</th>
+                    <td id="firstName">lknln</td>
+                </tr>
+                <tr>
+                    <th class="w-50">Last Name</th>
+                    <td id="lastName"></td>
+                </tr>
+                <tr>
+                    <th class="w-50">Email</th>
+                    <td id="emailTable"></td>
+                </tr>
+                <tr>
+                    <th class="w-50">Phone Number</th>
+                    <td id="phoneNumber"></td>
+                </tr>
+                <tr>
+                    <th class="w-50">Pin code</th>
+                    <td id="pinCode"></td>
+                </tr>
+                <tr>
+                    <th class="w-50">Age</th>
+                    <td id="ageTable"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
