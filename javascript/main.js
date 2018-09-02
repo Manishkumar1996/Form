@@ -245,24 +245,98 @@ function onBlurAge(e) {
 function submit(e) {
     var show = document.getElementById("infoTable");
     show.setAttribute("class", "table table-bordered");
-    console.log(show);
     
     var firstName = document.getElementById("first-name").value;
-    document.getElementById("firstName").innerHTML = firstName;
+    if (firstName == 0) {
+        alert("First Name is empty");
+        var show = document.getElementById("infoTable");
+        show.setAttribute("class", "table table-bordered d-none");
+        var shake = document.getElementById("first-name");
+        shake.setAttribute("class", "input shake");
+    }
+    else {
+        document.getElementById("firstName").innerHTML = firstName;
+        var shake = document.getElementById("first-name");
+        shake.setAttribute("class", "input");
+        
+    }
     
-     var firstName = document.getElementById("last-name").value;
-    document.getElementById("lastName").innerHTML = firstName;
+    var lastName = document.getElementById("last-name").value;
+    if (lastName == 0) {
+        alert("Last Name is empty");
+        var show = document.getElementById("infoTable");
+        show.setAttribute("class", "table table-bordered d-none");
+        var shake = document.getElementById("last-name");
+        shake.setAttribute("class", "input shake");
+    }
+    else {
+        document.getElementById("lastName").innerHTML = lastName;
+        var shake = document.getElementById("last-name");
+        shake.setAttribute("class", "input");
+    }
     
-     var firstName = document.getElementById("email").value;
-    document.getElementById("emailTable").innerHTML = firstName;
     
-     var firstName = document.getElementById("phone-number").value;
-    document.getElementById("phoneNumber").innerHTML = firstName;
+    var email = document.getElementById("email").value;
+    if (email == 0) {
+        alert("Email is empty");
+        var show = document.getElementById("infoTable");
+        show.setAttribute("class", "table table-bordered d-none");
+        var shake = document.getElementById("email");
+        shake.setAttribute("class", "input shake");
+    }
+    else {
+        document.getElementById("emailTable").innerHTML = email;
+        var shake = document.getElementById("email");
+        shake.setAttribute("class", "input");
+    }
     
-     var firstName = document.getElementById("pin-code").value;
-    document.getElementById("pinCode").innerHTML = firstName;
     
-     var firstName = document.getElementById("age").value;
-    document.getElementById("ageTable").innerHTML = firstName;
+    var phone = document.getElementById("phone-number").value;
+    if (phone == 0) {
+        alert("Phone number is empty");
+        var show = document.getElementById("infoTable");
+        show.setAttribute("class", "table table-bordered d-none");
+        var shake = document.getElementById("phone-number");
+        shake.setAttribute("class", "input shake");
+        
+    }
+    else {
+        document.getElementById("phoneNumber").innerHTML = phone;
+        var shake = document.getElementById("phone-number");
+        shake.setAttribute("class", "input");
+    }
+    
+    
+    var pin = document.getElementById("pin-code").value;
+    if (pin == 0) {
+        alert("Pin code is empty");
+        var show = document.getElementById("infoTable");
+        show.setAttribute("class", "table table-bordered d-none");
+        var shake = document.getElementById("pin-code");
+        shake.setAttribute("class", "input shake");
+    }
+    else {
+       document.getElementById("pinCode").innerHTML = pin;
+       var shake = document.getElementById("pin-code");
+       shake.setAttribute("class", "input");
+    }
+    
+    
+    var age = document.getElementById("age").value;
+    if (age == 0) {
+        alert("Age is empty");
+        var show = document.getElementById("infoTable");
+        show.setAttribute("class", "table table-bordered d-none");
+        var shake = document.getElementById("age");
+        shake.setAttribute("class", "input shake");
+    }
+    else {
+        document.getElementById("ageTable").innerHTML = age;
+        var shake = document.getElementById("age");
+        shake.setAttribute("class", "input");
+    }
+    
+    
+    
 }
 
