@@ -55,7 +55,7 @@ body {
 .submit-box #submit:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
-.submit-box #submit:focus {
+.submit-box #submit:active {
   filter: brightness(0.9);
 }
 
